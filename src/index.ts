@@ -78,7 +78,8 @@ const inferenceLoop = async (
   if (newText === null) {
     return generatedText;
   } else if (
-    countTokens(newText) === logprobs.content.length ||
+    (countTokens(newText) === logprobs.content.length &&
+      countTokens(newText) !== countTokens(generatedText) + 20) ||
     countTokens(newText) === countTokens(generatedText)
   ) {
     return newText;
