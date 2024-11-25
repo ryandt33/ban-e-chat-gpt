@@ -93,7 +93,7 @@ const inferenceLoop = async (
 const main = async (startingMessage: string) => {
   const response = await inferenceLoop(
     startingMessage,
-    "gpt-4o-mini",
+    "gpt-4o",
     /[eEèéêëÈÉÊË]/,
     ""
   );
