@@ -10,14 +10,15 @@ This is a very simple proof of concept looking at how we can use top_k to ban an
 ```
 npm i --save-dev
 ```
+3. Copy .env.sample to .env and put in your API key
 
-3. Build
+4. Build
 
 ```
 npx tsc
 ```
 
-4. Run
+5. Run
 
 ```
 node ./dist/index.js <YOUR PROMPT>
